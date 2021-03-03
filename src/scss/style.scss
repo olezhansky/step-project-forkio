@@ -1,0 +1,34 @@
+@import '_reset';
+@import '_vars';
+@import '_mixins';
+
+// Main styles
+html {
+    box-sizing: border-box;
+}
+
+*,*::after,*::before {
+    box-sizing: inherit;
+}
+
+body {
+    min-width: 320px;
+    overflow-x: hidden;
+}
+.container {
+    padding: 0 15px;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+@import '_header';
+@import '_main';
+@import '_footer';
+
+//Adaptive
+@import '_header-media';
+@import '_main-media';
+@import '_footer-media';

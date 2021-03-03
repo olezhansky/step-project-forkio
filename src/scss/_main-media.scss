@@ -1,0 +1,151 @@
+// Features tablet;
+@media(min-width: $tablet-width) {
+  .features {
+    &__content {
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+      padding-right: 30px;
+      &-img1,
+      &-img2,
+      &-img4 {
+        margin-top: -10px;
+    }
+      &-img3 {
+          margin-top: -5px;
+          margin-left: 15px;
+      }
+      &-img4 {
+        margin-left: 10px;
+      }
+      &-block-1 {
+        margin-left: 23px;
+      }
+      &-block-2 {
+        margin-left: 45px;
+      }
+      &-block-3 {
+        margin-left: 56px;
+      }
+      &-block-4 {
+        margin-left: 49px;
+      }
+      &-title1 {
+        text-align: left;
+      }
+      &-text {
+        text-align: left;
+      }
+    }
+  }
+}
+// Present desktop
+@media(min-width: $desktop-width) {
+  .present {
+    &__content-title {
+      font-size: 54px;
+      line-height: 54px;
+    }
+    &__content-text {
+      max-width: 861px;
+      margin: 35px auto 0;
+    }
+    &__button-menu {
+      padding-bottom: 50px;
+    }
+    &__button-block {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    &__button-block-one {
+      padding: 8.4px 8px 5px;
+    }
+  }
+}
+
+// Features desktop;
+@media(min-width: $desktop-width) {
+  .features {
+    padding-top: 50px;
+    &__content {
+      padding-left: 90px;
+    }
+    padding-left: 0px;
+    background-color: #F4F4F4;
+    &__content-title {
+      padding-top: 94px;
+      display: none;
+    }
+    &__wrapper-content {
+      display: flex;
+    }
+    &__img {
+      margin-top: 105px;
+      min-width: 550px;
+      position: relative;
+      &::before {
+        content: '< Here is what you get >';
+        position: absolute;
+        font-size: 48px;
+        line-height: 50px;
+        color: $baseColor;
+        font-weight: 700;
+        left: 20px;
+        top: -60px;
+      }
+    }
+  }
+}
+@media(min-width: 1300px) {
+  .features {
+    &__img {
+      min-width: 700px;
+    }
+  }
+}
+
+// About tablet
+@media(min-width: $tablet-width) {
+  .about {
+      &__items {
+          grid-template-columns: repeat(2, 1fr);
+          grid-row-gap: 45px;
+      }
+      &__item {
+          &:nth-child(2) {
+              margin-top: -5px;
+          }
+          &:nth-child(4) {
+              margin-top: 40px;
+          }
+      }
+      &__text {
+          &::after {
+              width: 420px;
+          }
+      }
+  }
+}
+// About desktop
+@media(min-width: $desktop-width) {
+  .about {
+      &__items {
+          margin-top: 100px;
+          grid-template-columns: repeat(3, 1fr);
+          grid-row-gap: 45px;
+      }
+      &__item {
+          &:nth-child(3) {
+              margin-top: -20px;
+          }
+          &:nth-child(4) {
+              margin-top: 10px;
+          }
+      }
+      &__text {
+          &::after {
+           min-width: 780px;
+          }
+      }
+  }
+}

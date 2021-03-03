@@ -1,0 +1,167 @@
+//Pricing
+.pricing {
+    margin-top: -1px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    background: url("../img/footer/footer-bag.png");
+    background-size: cover;
+    &__title {
+        text-align: center;
+        font-family: $font-primary;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 42px;
+        color: #fff;
+    }
+    &__items {
+        padding-top: 32px;
+    }
+
+    &__content {
+        margin: 0 auto;
+        background-color: rgba(255, 255, 255, 0.11);
+        max-width: 257px;
+        height: 457px;
+        margin-bottom: 18px;
+        &-heading-bg {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 24px;
+            font-family: $font-primary;
+            padding-top: 36px;
+            height: 97px;
+            color: #fff;
+            background-color: rgba(255, 255, 255, 0.06);
+            &-dark {
+                padding: 33px 0;
+                background: #3f2c40;
+                align-items: center;
+                text-align: center;
+                font-size: 24px;
+                text-transform: uppercase;
+                color: #fff;
+                font-family: $font-primary;
+            }
+        }
+        &-number {
+            margin-top: 30px;
+            height: 57px;
+            font-size: 60px;
+            line-height: 62px;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: #fff;
+            font-family: $font-primary;
+            &-dark {
+                margin-top: 14px;
+                height: 78px;
+                font-size: 82px;
+                line-height: 84px;
+                text-align: center;
+                text-transform: uppercase;
+                color: #fff;
+                font-weight: 700;
+                font-family: $font-primary;
+            }
+        }
+        &-text1 {
+            margin-top: 20px;
+            height: 18px;
+            font-size: 14px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #fff;
+            font-family: $font-primary;
+            &-dark {
+                margin-top: 16px;
+                height: 20px;
+                font-size: 14px;
+                text-align: center;
+                text-transform: uppercase;
+                color: #fff;
+                font-family: $font-primary;
+            }
+        }
+        &-ziro {
+            margin: 38px auto 0;
+            width: 60px;
+            height: 5px;
+            background: $baseColor;
+            &-dark {
+                margin: 46px auto 0;
+                width: 60px;
+                height: 5px;
+                left: 120px;
+                top: 285px;
+                background: $baseColor;
+            }
+        }
+        &-text2 {
+            margin-top: 30px;
+            height: 44px;
+            font-size: 16px;
+            line-height: 18px;
+            text-align: center;
+            color: #fff;
+            font-family: $font-primary;
+        }
+        &-block {
+            margin-top: 30px;
+            margin-bottom: 37px;
+            text-align: center;
+            color: #fff;
+            font-size: 16px;
+            line-height: 28px;
+            &-dark {
+                margin-top: 30px;
+                margin-bottom: 37px;
+                text-align: center;
+                color: #fff;
+                font-size: 16px;
+                line-height: 28px;
+            }
+        }
+        &-btn {
+            text-transform: uppercase;
+            border: .1rem solid transparent;
+            border-radius: 4rem;
+            background-color: rgba(255, 255, 255, 0.15);
+            padding: 1.5rem 1.7rem;
+            cursor: pointer;
+            color: #fff;
+            margin: 35px auto 3.8rem auto;
+            height: 15px;
+            left: 36px;
+            top: 13.5px;
+            font-size: 15px;
+            line-height: 15px;
+            @include flex-properties(flex, center, center);
+            font-family: $font-primary;
+            &-dark {
+                border: .1rem solid transparent;
+                border-radius: 4rem;
+                background-color: rgba(255, 255, 255, 0.15);
+                padding: 1.5rem 1.7rem;
+                cursor: pointer;
+                color: #fff;
+                margin: 100px auto 3.8rem auto;
+                height: 15px;
+                left: 48px;
+                top: 18.5px;
+                font-size: 16px;
+                line-height: 18px;
+                @include flex-properties(flex, center, center);
+                text-transform: uppercase;
+                
+            }
+        }
+        &-dark {
+            margin: 0 auto 18px;
+            background-color: rgba(255, 255, 255, 0.84);
+            background: #463048;
+            height: 560px;
+            max-width: 280px;
+        }
+    }
+}

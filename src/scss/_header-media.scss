@@ -1,0 +1,157 @@
+// Header tablet
+@media (min-width: $tablet-width) {
+    .container {
+        padding: 0 20px;
+    }
+    .header {
+        &__top {
+            padding: 22px 0 10px 0;
+        }
+        &__logo-text {
+            display: block;
+        }
+        &__top-btn {
+            margin-right: 0;
+            padding: 10px 35px;
+            transition: .3s;
+            border: 2px solid transparent;
+            &:hover {
+                background-color: #fff;
+                color: $baseColor;
+                transition: .3s;
+                border: 2px solid $baseColor;
+            }
+        }
+        &__menu-burger {
+            display: none;
+        }
+        &__menu-list {
+            opacity: 1;
+            visibility: visible;
+            position: initial;
+            background-color: #27262a;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 0;
+            padding-right: 0;
+            width: 100%;
+        }
+        &__menu-item {
+            padding: 15px 0 0 0;
+        }
+        &__menu-link {
+            color: $baseColor;
+            font-size: 16px;
+            font-weight: 700;
+            padding-left: 0;
+            padding-right: 0;
+            &:hover {
+                border-left: 8px solid transparent;
+            }
+        }
+        &__title {
+            font-size: 72px;
+            line-height: 72px;
+        }
+        &__text {
+            font-size: 24px;
+            line-height: 38px;
+        }
+        &__content-btn {
+            bottom: -35px;
+            font-size: 21px;
+            line-height: 23px;
+            padding: 23px 61px;
+            transition: .3s;
+            border: 2px solid transparent;
+            &:hover {
+                background-color: #fff;
+                color: $baseColor;
+                transition: .3s;
+                border: 2px solid $baseColor;
+            }
+        }
+        &__bottom-text {
+            margin-top: 55px;
+        }
+    }   
+}
+@media(min-width: 580px) {
+    .header {
+        &__menu-list {
+            padding-left: 7%;
+            padding-right: 7%;
+        }
+    }
+   
+}
+@media(min-width: 680px) {
+    .header {
+        &__menu-list {
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+    }
+   
+}
+
+//Header desktop
+@media(min-width: $desktop-width) {
+    .container{
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+    .header {
+        &__top {
+            background-color: #010005;
+        }
+        &__logo:hover .header__logo-img--hover,
+        &__logo:hover .header__logo-text {
+            display: block;
+            color: #fff; 
+        }
+        &__menu-list {
+            position: absolute;
+            top: 5px;
+            left: 23%;
+            max-width: 600px;
+            padding-left: 10%;
+            padding-right: 0px;
+            background-color: #010005;
+        }
+        &__menu-link:hover {
+            color: #fff;
+        }
+        &__content {
+            background-image: url(../img/header/header-bg1200.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin-top: -1px;
+        }
+        &__title {
+            font-size: 80px;
+            line-height: 82px;
+
+        }
+    } 
+}
+@media(min-width: 1100px) {
+    .header {
+        &__menu-list {
+            left: 31%;  
+        }  
+    }
+}
+@media(min-width: 1300px) {
+    .header__menu-list {
+        left: 35%; 
+        padding-left: 50px;
+    } 
+}
+@media(min-width: 1450px) {
+    .header__menu-list {
+        left: 38%; 
+    } 
+}
